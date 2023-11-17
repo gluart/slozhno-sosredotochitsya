@@ -17,9 +17,8 @@
   padding-block: 20px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 768px;
-  max-block-size: 100vh;
-  background-image: var(--cover-image);
+  min-block-size: 668px;  /* А точно 668px? В макете 768px указана высота. */ 
+  block-size: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32,8 +31,8 @@
   right: 20px;
   block-size: 25px;
   inline-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--angle-color);
+  border-inline-end: 1px solid var(--angle-color);
   padding-block-start: 8px;
   padding-inline-end: 9px
 }
@@ -45,8 +44,8 @@
   bottom: 20px;
   block-size: 25px;
   inline-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--angle-color);
+  border-block-end: 1px solid var(--angle-color);
 }
 
 .title-decor {
@@ -86,14 +85,14 @@
   width: 66px;
   height: 25px;
   text-transform: lowercase;
-  color: var(--accent-color);
+  color: var(--navigation-color);
   font-family: var(--main-font, monospace);
   font-size: var(--font-size, 18px);
   line-height: var(--font-size, 18px); /* font-size = line-height 18px */
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--navigation-color);
+  border: 1px solid var(--border-bt-color);
   cursor: pointer;
 }
 
@@ -102,8 +101,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration: underline;
-  text-underline-offset: 5px;
+  border-bottom: 1px solid var(--navigation-color);
 }
 
 .header__theme-menu-button_type_dark:disabled {
@@ -142,7 +140,7 @@
   max-inline-size: 491px;
   width: calc(100% - 365px);
   color: var(--sub-heading-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   font-family: var(--main-font, monospace);
   font-size: var(--font-size, 18px);
   font-weight: bold;
@@ -179,7 +177,7 @@
 .bad-concentrade__header,
 .low-concentrade__header,
 .how-to-concentrade__header {
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   color: var(--sub-heading-color);
   font-family: var(--main-font);
   font-size: var(--font-size, 18px);
@@ -204,7 +202,7 @@ a {
 
 .accent-link {
   text-decoration: none;
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px var(--accent-link-color);
 }
 
 .accent-link:hover {
@@ -249,7 +247,7 @@ a {
 .how-to-concentrade__accent-text {
   display: block;
   color: var(--sub-heading-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
   font-size: var(--font-size, 18px);
   font-family: var(--main-font, monospace);
   margin-block-end: 10px;
@@ -261,7 +259,7 @@ a {
   font-weight: 700;
   line-height: 23.4px;
   color: var(--sub-heading-color);
-  background-color: var(--accent-color);
+  background-color: var(--accent-bg-color);
 }
 
 .picture-block__list {
@@ -295,39 +293,7 @@ a {
 }
 
 
-.picture-block__image__sunset {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.picture-block__image__icecream {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.picture-block__image__cassette {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.picture-block__image__books {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.picture-block__image__street {
+.picture-image {
   display: block;
   inline-size: 100%;
   block-size: 100%;
@@ -336,8 +302,8 @@ a {
 }
 
 .footer {
-  min-block-size: 768px;
-  max-block-size: 100vh;
+  min-block-size: 668px; /* Так же 668px? В макете 768px указана высота. */ 
+  block-size: 100vh;
   padding-inline: 20px;
   padding-block: 20px;
   display: grid;
@@ -353,8 +319,8 @@ a {
   top: 22px;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--angle-color);
+  border-inline-end: 1px solid var(--angle-color);
 }
 
 .footer::after {
@@ -364,8 +330,8 @@ a {
   bottom: 20px;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--angle-color);
+  border-inline-start: 1px solid var(--angle-color);
 }
 
 .theme_auto .footer::before {
@@ -394,7 +360,7 @@ a {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 82.5%;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   font-family: var(--main-font, monospace);
 }
 
@@ -405,17 +371,6 @@ a {
   
   .header {
     min-block-size: 1024px;
-  }
-
-  .decorated-zone::after {
-    content: '';
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    inline-size: 25px;
-    block-size: 25px;
-    border-block-end: 1px solid var(--accent-color);
-    border-inline-start: 1px solid var(--accent-color);
   }
   
   .header__theme-menu {
@@ -432,6 +387,10 @@ a {
     display: grid;
     justify-items: end;
     gap: 12px;
+  }
+
+  .header__title {
+    text-shadow: 4px 4px 0px var(--accent-color-saturation);
   }
 
   .header__text-wrapper {
@@ -474,6 +433,7 @@ a {
   } 
 
   .footer__title {
+    text-shadow: 2px 2px 0 var(--accent-color-saturation);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -585,14 +545,14 @@ a {
   }
 
   .footer::before {
-  content: '';
-  right: 10px;
-  top: 10px;
-}
+    content: '';
+    right: 10px;
+    top: 10px;
+  }
 
-.footer::after {
-  content: '';
-  left: 10px;
-  bottom: 10px;
-}
+  .footer::after {
+    content: '';
+    left: 10px;
+    bottom: 10px;
+  }
 }

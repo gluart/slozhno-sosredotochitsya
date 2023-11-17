@@ -15,10 +15,14 @@
   --heading-color: #ff0070;
   --sub-heading-color: #000028;
   --accent-color: #ff0070;
+  --accent-color-saturation: #ff0070;
+  --accent-bg-color: #ff0070;
+  --accent-link-color: #ff0070;
   --accent-paragraph-color: #000028;
   --cover-image: url(../images/cover-image-dark.png);
   --angle-color: #ff0070;
   --navigation-color: #ff0070;
+  --border-bt-color: rgba(255, 0, 112, 0.40);;
   --title-decor: visible;
 
   /* Light theme */
@@ -29,9 +33,13 @@
   --heading-color: #353430;
   --sub-heading-color: #353430;
   --accent-paragraph-color: #353430;
-  --accent-color: #ff8fcb;
+  --accent-color: #ff0070;
+  --accent-color-saturation: #ff8fcb;
+  --accent-bg-color: #ff8fcb;
+  --accent-link-color: #ff8fcb;
   --cover-image: url(../images/cover-image-light.png);
   --angle-color: #353430;
   --navigation-color: #353430;
+  --border-bt-color: rgba(50, 49, 45, 0.40);
   --title-decor: hidden;
 }
