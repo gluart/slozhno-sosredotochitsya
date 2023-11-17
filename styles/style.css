@@ -17,7 +17,7 @@
   padding-block: 20px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 768px;  /* А точно 668px? В макете 768px указана высота. */ 
+  min-block-size: 668px;
   block-size: 100vh;
   background-size: cover;
   background-position: center;
@@ -302,7 +302,7 @@ a {
 }
 
 .footer {
-  min-block-size: 768px; /* Так же 668px? В макете 768px указана высота. */ 
+  min-block-size: 668px;
   block-size: 100vh;
   padding-inline: 20px;
   padding-block: 20px;
