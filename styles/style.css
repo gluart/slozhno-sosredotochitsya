@@ -17,7 +17,7 @@
   padding-block: 20px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  min-block-size: 668px;  /* А точно 668px? В макете 768px указана высота. */ 
+  min-block-size: 768px;  /* А точно 668px? В макете 768px указана высота. */ 
   block-size: 100vh;
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@
 
 .header__theme-menu-button {
   background-color: transparent;
-  border: 0;
+  border: 1px solid transparent;
   width: 66px;
   height: 25px;
   text-transform: lowercase;
@@ -302,7 +302,7 @@ a {
 }
 
 .footer {
-  min-block-size: 668px; /* Так же 668px? В макете 768px указана высота. */ 
+  min-block-size: 768px; /* Так же 668px? В макете 768px указана высота. */ 
   block-size: 100vh;
   padding-inline: 20px;
   padding-block: 20px;
