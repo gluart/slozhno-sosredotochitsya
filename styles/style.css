@@ -432,16 +432,10 @@ a {
 }
 
 
-/***                                     MEDIA WIDTH 600 px                                       ***/
+/***                                     MEDIA WIDTH 685 px                                      ***/
 
 
 @media (width <= 685px) and (orientation: portrait) {
-
-  /* 
-    Валерия здравствуйте. 
-    Я изменил брейкпоинт на 685px для того, чтобы блок с текстом в header не выпадал при сжатии.
-    Спасибо Вам, за ревью!
-   */
 
   .header {
     padding-inline: 10px;
