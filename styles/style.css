@@ -368,7 +368,7 @@ a {
 /***                                    MEDIA WIDTH 768 px                                        ***/
 
 @media (width <= 768px) and (orientation: portrait) {
-  
+
   .header__theme-menu {
     width: 100%;
     margin-block-start: 170px;
@@ -435,7 +435,14 @@ a {
 /***                                     MEDIA WIDTH 600 px                                       ***/
 
 
-@media (width <= 600px) and (orientation: portrait) {
+@media (width <= 685px) and (orientation: portrait) {
+
+  /* 
+    Валерия здравствуйте. 
+    Я изменил брейкпоинт на 685px для того, чтобы блок с текстом в header не выпадал при сжатии.
+    Спасибо Вам, за ревью!
+   */
+
   .header {
     padding-inline: 10px;
     padding-block: 10px;
